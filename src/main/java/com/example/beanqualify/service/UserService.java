@@ -8,8 +8,8 @@ public class UserService {
 
     private final MailService mailService;
 
-    public UserService(MailService naverMailServiceImpl) {
-        this.mailService = naverMailServiceImpl;
+    public UserService(MailService mailService) {
+        this.mailService = mailService;
     }
 
     public String createUser(SignUpDto signUpDto) {
